@@ -12,7 +12,6 @@ const AddToCartButton = ({ icon = true, color = "primary", customOnClick = null 
 	const floatStyle = {
 
 		display: hidden ? "none" : "",
-		marginLeft: icon ? "-3.7rem" : "-5.2rem",
 		position: "absolute"
 	};
 
@@ -20,7 +19,7 @@ const AddToCartButton = ({ icon = true, color = "primary", customOnClick = null 
 
 		property: "transform",
 		fromValue: "translateY(0) scale(1)",
-		toValue: "translateY(-40px) scale(1.2)"
+		toValue: "translateY(-55px) scale(1.2)"
     };
 
 	const colorAnimation = {
@@ -32,7 +31,7 @@ const AddToCartButton = ({ icon = true, color = "primary", customOnClick = null 
 
 	const mainAnimation = {
 		
-		duration: 600,
+		duration: 700,
 		iterations: "1",
 		fromTo: [ floatGrowAnimation, colorAnimation ],
 		easing: "cubic-bezier(0.25, 0.7, 0.25, 0.7)"
@@ -53,9 +52,9 @@ const AddToCartButton = ({ icon = true, color = "primary", customOnClick = null 
 				{ icon && <IonIcon icon={ cartOutline } /> }
         	</IonButton>
 
-        	<CreateAnimation ref={ iconRef } { ...mainAnimation }>
-          		<IonIcon icon={ cartOutline } size="large" style={ floatStyle } />
-        	</CreateAnimation>
+			<CreateAnimation ref={ iconRef } { ...mainAnimation }>
+					<IonIcon icon={ cartOutline } size="large" style={ floatStyle } />
+				</CreateAnimation>
 		</div>
 	);
 }
