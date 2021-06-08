@@ -3,14 +3,15 @@ An example of an add to cart animation effect using Ionic Animations
 <br />
 If you'd like to support, you can <a className="link" href="https://www.buymeacoffee.com/ionicreacthub" target="_blank" rel="noopener">buy me a coffee</a> ☕️
 
-![Ionic React Add To Cart Animation](https://repository-images.githubusercontent.com/374764563/cebf9680-c7e6-11eb-8da1-302e03a20725)
+![Ionic React Add To Cart Animation](https://repository-images.githubusercontent.com/375163547/bb322f80-c8bb-11eb-950a-ed4fb4cd8e47)
 
 ### Included in this Ionic React Template/UI
-* Modern, stylish profile dashboard UI
-* Custom header/toolbar
-* Background pattern in toolbar
-* SASS Modules & Ionic CSS utilities
-
+* Ionic Animations
+* Specify color of button (animation color too)
+* Specify Icon or text for "add to cart" button
+* Specify a custom click
+* CSS modules & Ionic CSS utilities
+ 
 ### To run
 
 ```javascript
